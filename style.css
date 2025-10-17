@@ -308,10 +308,10 @@ main{
     padding: 6px;
     justify-content: center;
     align-items: center;
-    display: inline-block;     /* makes them stay side by side */
+    display: inline-block;     
 }
 .social-media img:hover{
-    transform: scale(1.1);      /* slight zoom on hover */
+    transform: scale(1.1);     
     opacity: 1;
 }
 .dest-first-section{
@@ -367,7 +367,7 @@ main{
         }
 } 
 .places:hover{
-    transform: scale(1.1);      /* slight zoom on hover */
+    transform: scale(1.1);    
     opacity: 1;
 }
 .place1{
@@ -466,7 +466,6 @@ main{
         display: flex;
         justify-content: left;
         width: 100%;
-        ;
         padding-right: 40px;
         img{
             border-radius: 15px;
@@ -479,12 +478,127 @@ main{
     .contenu-right{
         display: flex;
         justify-content: right;
-        weight:1000px;
+        font-weight: 700;
+        font-size: small;
+        height:350px;
+        position: relative;
+        top: 25px;
+        font-family: var(--font-heading);
        p{
             background: rgb(255, 227, 255);
-            border-radius: 18px;
+            border-radius:  8px;
             box-shadow: 5px 5px 5px var(--accent-color);
+            text-align: center;
+            width: 500px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           padding-left: 20px;
+           padding-right: 20px;
        }
 
     }
+}
+
+
+
+.contact-container {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  width: 380px;
+  text-align: left;
+  margin: 60px auto;     
+    height: 600px;
+}
+
+.contact-container h1 {
+  text-align: center;
+  font-size: var(--font-heading);
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+}
+
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: var(--font-heading);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #888;
+  outline: none;
+}
+.r {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.r button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    position: relative;
+    left: 40%;
+}
+.r:hover {
+  background-color: hsl(0, 0%, 27%);
+}
+
+.SignUp-container {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  width: 380px;
+  text-align: left;
+  margin: 60px auto;     
+    height: 700px;
+}
+.SignUp-container h1 {
+  text-align: center;
+  font-size: var(--font-heading2);
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+}
+
+
+.login-container {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  width: 380px;
+  text-align: left;
+  margin: 60px auto;     
+    height: 400px;
+}
+.login-container h1 {
+  text-align: center;
+  font-size: var(--font-heading2);
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 30px;
 }
