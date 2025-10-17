@@ -264,42 +264,37 @@ main{
   flex: 1;
 }
 .A {
-   padding-right: 50px;
+    padding-right: 50px;
+    p{
+        font-family: var(--text-color);
+        font-size: 12px;
+    }
+    h3{
+        font-size: 40px;
+    }
 }
-.A p{
-    font-family: var(--text-color);
-    font-size: 12px;
-}
-.A h3{
-    font-size: 40px;
-}
-.B p {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+
 .B{
     padding-left: 30px;
-}
+    p{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        li {
+            margin-bottom: 8px;
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
 
-.B ul {
-  list-style: none;
-  padding: 0;
 }
-
-.B ul li {
-  margin-bottom: 8px;
-}
-
-.B ul li a {
-  color: black;
-  text-decoration: none;
-}
-
 .B ul li a:hover {
   color: #555;
-}
-.social-media{
-   
 }
 .fut{
     display: flex;
@@ -323,8 +318,6 @@ main{
 .dest-pyc{
     margin-right: 150px;
 }
-
-
 .dest-css p{
     font-weight: 500;
     font-family: var(--font-heading);
@@ -333,20 +326,47 @@ main{
     margin-top: 60px;
     padding: 50 px 100px;
     text-align: center;
-
-
-
 }
 .dest-css h1{
-    padding: 50 px 100px;
+    padding: 50px 100px;
     text-align: center;
     font-size: 3.5rem;
     line-height: 1.2;
     margin-bottom:50px;
     font-family: var(--font-heading2);
 }
-
-
+.destination-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+.destinatio{
+    padding-top: 90px;
+}
+.places{
+    display: flex;
+    
+        border-top-left-radius: 0;  
+        border-top-right-radius: 0;  
+        border-bottom-left-radius: 15px;   
+        border-bottom-right-radius: 15px;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 5px 5px 5px gray;
+        margin: 50px 50px;
+        img{
+            z-index: -20;
+        }
+        .content-pls{
+            z-index: 1;
+        }
+} 
+.places:hover{
+    transform: scale(1.1);      /* slight zoom on hover */
+    opacity: 1;
+}
 .place1{
     display: flex;
     justify-content: center;
@@ -371,20 +391,14 @@ main{
     justify-items: center;
     padding: 20px;
 }
-
-.places{
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px gray;
-    margin: 50 px 50px;
-}
-
 .places img{
     width: 300px;
     height: 300px;
     weight:150px;
-    border-radius: 15px;
+    border-top-left-radius: 15px;  
+    border-top-right-radius: 15px;  
+    border-bottom-left-radius: 0;   
+    border-bottom-right-radius: 0;
     display: flex;
     flex-direction: column;
     gap:30px;
@@ -396,18 +410,24 @@ main{
 .content-places{
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    height: 50px;
     weight:100px;
     h5{
         display: flex;
         justify-content:right;
+        padding: 20px;
+        
     }
     h6{
-        padding-top: 10px;
+       padding-top: 17px;
+       padding-right: 90px;
+       font-size: medium;
     }
     
 }
 .line{
     display: flex;
-    
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-size: small;
 }
