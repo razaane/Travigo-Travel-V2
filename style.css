@@ -516,7 +516,7 @@ main{
   text-align: center;
   font-size: var(--font-heading);
   font-weight: 700;
-  color: #2c2c2c;
+  color:var(--text-color);
   margin-bottom: 30px;
 }
 
@@ -580,11 +580,9 @@ form textarea:focus {
   text-align: center;
   font-size: var(--font-heading2);
   font-weight: 700;
-  color: #2c2c2c;
+  color:var(--text-color);
   margin-bottom: 30px;
 }
-
-
 .login-container {
   background: white;
   padding: 40px 50px;
@@ -599,6 +597,6 @@ form textarea:focus {
   text-align: center;
   font-size: var(--font-heading2);
   font-weight: 700;
-  color: #2c2c2c;
+  color:var(--text-color);
   margin-bottom: 30px;
 }
