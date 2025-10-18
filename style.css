@@ -156,18 +156,7 @@ main{
 .unimage {
     width: 100%;
     max-width: 500px;
-    margin-top: 30px; 
-    object-fit: contain;
-    animation: floatImage 3s ease-in-out infinite; 
-}
-
-@keyframes floatImage {
-    0%, 50% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+    margin-top: 30px;
 }
 .second-section-main{
     display: flex;
